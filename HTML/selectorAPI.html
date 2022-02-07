@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="colorpara">The matching is done using depth-first pre-order traversal of the document's nodes starting with the first element in the document's markup and iterating through sequential nodes by order of the number of child nodes.</p>
+    <button  onclick="changecolor('Red')">Color</button>
+
+    <script>
+
+        function changecolor(newColor){
+            var colr=document.querySelector("#colorpara");
+            colr.style.color = newColor; 
+
+        }
+
+
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <form method="post" action="navBar.html" >
+
+        <table>
+            <tr>
+                <th>Employee ID</th> 
+                <td>
+                    <input type="number" name="empid" height="30px" style="width:30px" min="10001" max="15000" required>
+                </td>
+            </tr>
+            <tr> 
+                <th>First Name</th>
+                <td>
+                    <input type="text" name="fname" placeholder="First Name" pattern="[A-Za-z{3}{15}]" required>
+                </td>
+            </tr> 
+            <tr> 
+                <th>Last Name</th>
+                <td>
+                    <input type="text" name="lname" pattern="[A-Za-z{5}{25}]" required>
+                </td>
+            </tr> 
+            <tr>
+                <th>Department</th>
+                <td>
+                    <input type="radio" name="it" >IT<br>
+                    <input type="radio" name="hr">HR<br>
+                    <input type="radio" name="finance">Finance<br>
+                    <input type="radio" name="admin">Admin<br>
+                </td>
+            </tr> 
+             <tr> 
+                <th>Date of Joining</th>
+                <td>
+                    <input type="date" name="doj" placeholder="mm/dd/yyyy" required>
+                </td>
+            </tr> 
+             <tr> 
+                <th>Email</th>
+                <td>
+                    <input type="email" name="email" required>
+                </td>
+            </tr>
+             <tr> 
+                <th>Contact No</th>
+                <td>
+                    <input type="tel" name="contact" pattern="^\d{3}-\d{3}-\d{4}$" max="10" required>
+                </td>
+            </tr> 
+             <tr> 
+                <th>Address</th>
+                <td>
+                   <textarea name="address"  cols="30" rows="10" required></textarea>
+                </td>
+            </tr>
+            <tr> 
+                <th>Training programs to be Attended</th>
+                <td>
+                   <input type="checkbox" name="WB">Web Basics <br>
+                   <input type="checkbox" name="C">C# <br>
+                   <input type="checkbox" name="EF">Entity Framework <br>
+                   <input type="checkbox" name="ANM">ASP .NET MVC <br>
+                </td>
+            </tr> 
+            <tr>
+                <th>  </th> 
+                <td>
+                  <button name="register" type="submit">Register</button>
+                  <button type="reset">Cancel</button>
+                </td>
+            </tr> 
+                    
+        </table>
+    </form>
+</body>
+</html>

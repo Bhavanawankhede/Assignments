@@ -1,0 +1,15 @@
+
+tr:first-of-type{
+    background-color: grey;
+}
+
+tr:nth-child(even){
+    background-color: greenyellow;
+}
+
+table{
+    border: 2px solid black;
+}
+
+
+
